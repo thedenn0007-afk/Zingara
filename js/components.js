@@ -1,6 +1,5 @@
 /* ============================================================
-   ZINGARA — SHARED COMPONENTS (navbar + footer + floating btns)
-   Include this AFTER main.js on every page.
+   ZINGARA — SHARED COMPONENTS (navbar + footer)
    ============================================================ */
 
 /* ── RENDER SHARED NAVBAR ── */
@@ -10,9 +9,8 @@
   nav.innerHTML = `
     <div class="nav-inner">
       <a class="nav-logo" href="index.html">
-  <img src="images/logo.png" alt="Zingara Restaurant" class="nav-logo-img">
-  ZINGARA
-</a>
+        <img src="images/logo.png" alt="" class="nav-logo-img" aria-hidden="true">ZINGARA
+      </a>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="biryani.html">Biryani</a>
@@ -39,7 +37,7 @@
     <a href="menu.html">Full Menu</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-    <a href="tel:+919187103005" class="btn btn-outline-cream" style="margin-top:16px; width:100%; text-align:center;">📞 Call Now</a>
+    <a href="tel:+919187103005" class="btn btn-outline-cream" style="margin-top:16px;width:100%;text-align:center;">📞 Call Now</a>
   `;
 })();
 
@@ -55,10 +53,10 @@
             <img src="images/logo.png" alt="Zingara Restaurant" class="footer-logo">
             <div class="footer-brand-name">ZINGARA</div>
           </a>
-            <p class="footer-tagline">Bangalore's most addictive biryani.<br>Hot. Spicy. Loaded. Ready in minutes.</p>
-          <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
-            <a href="https://www.swiggy.com/direct/brand/230006?source=swiggy-direct&subSource=google" target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px; font-size:0.75rem;">Swiggy</a>
-            <a href="https://link.zomato.com/xqzv/rshare?id=133623290305633fe" target="_blank" rel="noopener" class="btn btn-outline-cream" style="padding:10px 20px; font-size:0.75rem;">Zomato</a>
+          <p class="footer-tagline">Bangalore's most addictive biryani.<br>Hot. Spicy. Loaded. Ready in minutes.</p>
+          <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
+            <a href="https://www.swiggy.com/direct/brand/230006?source=swiggy-direct&subSource=google" target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px;font-size:0.75rem;">Swiggy</a>
+            <a href="https://link.zomato.com/xqzv/rshare?id=133623290305633fe" target="_blank" rel="noopener" class="btn btn-outline-cream" style="padding:10px 20px;font-size:0.75rem;">Zomato</a>
           </div>
         </div>
         <div class="footer-col">

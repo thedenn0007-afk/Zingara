@@ -132,15 +132,18 @@ body::after {
 .nav-logo {
   font-family:'Bebas Neue',sans-serif; font-size:2rem;
   color:var(--cream); letter-spacing:0.05em;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  line-height:1;
 }
 .nav-logo-img {
-  height: 36px;
-  width: auto;
-  display: block;
-  /* Uncomment below if logo has light background on dark navbar */
+  height:36px;
+  width:auto;
+  display:block;
+  flex-shrink:0;
+  object-fit:contain;
+  /* Uncomment if logo needs inverting on dark navbar: */
   /* filter: brightness(0) invert(1); */
 }
 
@@ -654,11 +657,6 @@ body::after {
   aspect-ratio:4/3; background:rgba(0,0,0,0.2);
   display:flex; align-items:center; justify-content:center;
 }
-.map-placeholder {
-  text-align:center; color:var(--cream-dim);
-  font-family:'Oswald',sans-serif; font-weight:600;
-  font-size:0.9rem; letter-spacing:0.15em;
-}
 
 /* ============================================================
    FINAL PUSH / CTA SECTION
@@ -710,7 +708,7 @@ footer {
 }
 .footer-brand-name {
   font-family:'Bebas Neue',sans-serif; font-size:3.5rem;
-  color:var(--cream); letter-spacing:0.05em; line-height:1;
+  color:var(--red); letter-spacing:0.05em; line-height:1;
 }
 .footer-tagline {
   font-family:'Barlow Condensed',sans-serif; font-weight:300;
@@ -775,14 +773,10 @@ footer {
 }
 .floating-btn:hover { transform:scale(1.1); }
 .floating-call { background:var(--red); }
-.floating-wa   { background:#25D366; }
 
 /* ============================================================
    PAGE-SPECIFIC: BIRYANI PAGE
    ============================================================ */
-.page-hero-inner {
-  padding-top:120px; padding-bottom:60px;
-}
 .page-title {
   font-family:'Bebas Neue',sans-serif;
   font-size:clamp(4rem,12vw,10rem);
@@ -864,120 +858,6 @@ footer {
   font-size:0.85rem; line-height:1.6; text-transform:uppercase;
   letter-spacing:0.06em; color:var(--cream-dim);
 }
-
-/* ============================================================
-   PAGE-SPECIFIC: MENU PAGE
-   ============================================================ */
-.combos-section {
-  background:var(--red); padding:80px 5vw;
-  position:relative; overflow:hidden;
-}
-.combos-section::before {
-  content:'COMBOS';
-  position:absolute; bottom:-40px; right:-20px;
-  font-family:'Bebas Neue',sans-serif;
-  font-size:clamp(8rem,18vw,16rem);
-  color:rgba(242,234,194,0.04);
-  pointer-events:none;
-}
-.combos-inner { max-width:1200px; margin:0 auto; position:relative; z-index:1; }
-.combos-inner h2 {
-  font-family:'Bebas Neue',sans-serif;
-  font-size:clamp(2.5rem,6vw,5rem);
-  color:var(--cream); margin-bottom:12px;
-}
-.combos-sub {
-  font-family:'Barlow Condensed',sans-serif; font-weight:300;
-  font-size:0.9rem; letter-spacing:0.1em; text-transform:uppercase;
-  color:var(--cream-dim); margin-bottom:40px;
-}
-.combos-grid {
-  display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
-}
-.combo-card {
-  background:rgba(255,255,255,0.07);
-  border-top:3px solid var(--cream);
-  border:1px solid rgba(242,234,194,0.2);
-  border-radius:4px; padding:28px 26px;
-  transition:transform 0.2s, background 0.2s;
-}
-.combo-card:hover {
-  transform:translateY(-4px);
-  background:rgba(255,255,255,0.12);
-}
-.combo-card-name {
-  font-family:'Bebas Neue',sans-serif; font-size:1.9rem;
-  color:var(--cream); line-height:1.1; margin-bottom:16px;
-}
-.combo-includes-label {
-  font-family:'Oswald',sans-serif; font-weight:600;
-  font-size:0.65rem; letter-spacing:0.25em; text-transform:uppercase;
-  color:var(--red); margin-bottom:10px;
-  /* override the red bg — use cream tinted version for readability on red bg */
-  color:rgba(242,234,194,0.6);
-}
-.combo-includes-list {
-  list-style:none; border-top:1px solid rgba(242,234,194,0.15);
-}
-.combo-includes-list li {
-  font-family:'Barlow Condensed',sans-serif; font-weight:300;
-  font-size:0.82rem; text-transform:uppercase; letter-spacing:0.06em;
-  color:var(--cream-dim); padding:6px 0;
-  border-bottom:1px solid rgba(242,234,194,0.08);
-  display:flex; align-items:center; gap:8px;
-}
-.combo-includes-list li::before {
-  content:'✓'; color:var(--cream); font-size:0.75rem; flex-shrink:0;
-}
-.combo-price {
-  font-family:'Bebas Neue',sans-serif; font-size:3rem;
-  color:var(--cream); margin-top:20px; letter-spacing:0.02em;
-}
-.combo-badge {
-  display:inline-block;
-  background:var(--cream); color:var(--red);
-  font-family:'Oswald',sans-serif; font-weight:700;
-  font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase;
-  padding:3px 10px; border-radius:2px; margin-bottom:16px;
-}
-
-/* Full menu category accordion */
-.full-menu { padding:60px 5vw; background:var(--off-white); }
-.full-menu-inner { max-width:1200px; margin:0 auto; }
-.full-menu h2 {
-  font-family:'Bebas Neue',sans-serif;
-  font-size:clamp(2.5rem,6vw,5rem);
-  color:var(--text-dark); margin-bottom:40px;
-}
-
-.menu-category { margin-bottom:4px; }
-.menu-cat-header {
-  display:flex; align-items:center; justify-content:space-between;
-  background:var(--black); padding:16px 24px; cursor:pointer;
-  transition:background 0.2s;
-}
-.menu-cat-header:hover { background:#1a1a1a; }
-.menu-cat-header.open { background:var(--red); }
-.menu-cat-title {
-  font-family:'Oswald',sans-serif; font-weight:700;
-  font-size:1rem; text-transform:uppercase; letter-spacing:0.15em;
-  color:var(--cream);
-}
-.menu-cat-arrow {
-  font-size:0.8rem; color:var(--cream);
-  transition:transform 0.3s;
-}
-.menu-cat-header.open .menu-cat-arrow { transform:rotate(180deg); }
-
-.menu-cat-body {
-  display:none; background:#fff;
-  border-left:4px solid var(--red);
-}
-.menu-cat-body.open { display:block; }
-.menu-cat-body .menu-item-row {
-  border-left:none; border-radius:0; border-bottom:1px solid rgba(204,26,26,0.06);
-}
-.menu-cat-body .menu-item-row:last-child { border-bottom:none; }
 
 /* ============================================================
    PAGE-SPECIFIC: ABOUT PAGE
@@ -1154,7 +1034,6 @@ footer {
   .what-grid { grid-template-columns:1fr 1fr; }
   .star-product-inner { grid-template-columns:1fr; }
   .location-inner { grid-template-columns:1fr; }
-  .combos-grid { grid-template-columns:1fr; }
   .biryani-full-grid { grid-template-columns:1fr 1fr; }
   .why-special-grid { grid-template-columns:1fr; }
   .footer-top { grid-template-columns:1fr 1fr; }
@@ -1417,3 +1296,4 @@ footer {
 @media (max-width:600px) {
   .menu-cards-grid { grid-template-columns:1fr; }
 }
+    
