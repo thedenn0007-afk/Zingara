@@ -9,7 +9,10 @@
   if (!nav) return;
   nav.innerHTML = `
     <div class="nav-inner">
-      <a class="nav-logo" href="index.html"><span>Z</span>INGARA</a>
+      <a class="nav-logo" href="index.html">
+  <img src="images/logo.png" alt="Zingara Restaurant" class="nav-logo-img">
+  ZINGARA
+</a>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="biryani.html">Biryani</a>
@@ -48,8 +51,11 @@
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
-          <div class="footer-brand-name"><span>Z</span>INGARA</div>
-          <p class="footer-tagline">Bangalore's most addictive biryani.<br>Hot. Spicy. Loaded. Ready in minutes.</p>
+          <a href="index.html" class="footer-brand-link">
+            <img src="images/logo.png" alt="Zingara Restaurant" class="footer-logo">
+            <div class="footer-brand-name">ZINGARA</div>
+          </a>
+            <p class="footer-tagline">Bangalore's most addictive biryani.<br>Hot. Spicy. Loaded. Ready in minutes.</p>
           <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
             <a href="https://www.swiggy.com" target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px; font-size:0.75rem;">Swiggy</a>
             <a href="https://www.zomato.com" target="_blank" rel="noopener" class="btn btn-outline-cream" style="padding:10px 20px; font-size:0.75rem;">Zomato</a>
