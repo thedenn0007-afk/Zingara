@@ -57,8 +57,8 @@
           </a>
             <p class="footer-tagline">Bangalore's most addictive biryani.<br>Hot. Spicy. Loaded. Ready in minutes.</p>
           <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
-            <a href="https://www.swiggy.com" target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px; font-size:0.75rem;">Swiggy</a>
-            <a href="https://www.zomato.com" target="_blank" rel="noopener" class="btn btn-outline-cream" style="padding:10px 20px; font-size:0.75rem;">Zomato</a>
+            <a href="https://www.swiggy.com/direct/brand/230006?source=swiggy-direct&subSource=google" target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px; font-size:0.75rem;">Swiggy</a>
+            <a href="https://link.zomato.com/xqzv/rshare?id=133623290305633fe" target="_blank" rel="noopener" class="btn btn-outline-cream" style="padding:10px 20px; font-size:0.75rem;">Zomato</a>
           </div>
         </div>
         <div class="footer-col">
