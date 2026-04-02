@@ -131,7 +131,7 @@ body::after {
 
 .nav-logo {
   font-family:'Bebas Neue',sans-serif; font-size:2rem;
-  color:var(--cream); letter-spacing:0.05em;
+  color:var(--red); letter-spacing:0.05em;
   display:flex;
   align-items:center;
   gap:10px;
