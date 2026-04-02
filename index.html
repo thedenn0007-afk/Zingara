@@ -14,7 +14,7 @@
   <meta property="og:title" content="Zingara Restaurant — Best Biryani in Horamavu, Bangalore">
   <meta property="og:description" content="Rated 4.3⭐ — Dum biryani, Mysore Pulav, Seekh Kebab. Order now or visit us in Horamavu, Bengaluru.">
   <meta property="og:type" content="restaurant">
-  <meta property="og:image" content="images/hero-1.JPG">
+  <meta property="og:image" content="images/opt/hero-1.jpg">
   <meta property="og:url" content="https://zingara.in">
 
   <!-- Canonical -->
@@ -24,6 +24,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600;700&family=Barlow+Condensed:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Preload critical first-view image -->
+  <link rel="preload" as="image" href="images/opt/hero-1.webp" type="image/webp">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -71,37 +74,49 @@
   <!-- Carousel slides — add your images as images/hero-1.JPG etc -->
   <div class="hero-carousel">
     <div class="hero-slide active">
-      <img
-        src="images/hero-1.JPG"
+      <picture>
+          <source srcset="images/opt/hero-1.webp" type="image/webp">
+          <img
+        src="images/opt/hero-1.jpg"
         alt="Zingara signature biryani served hot"
         width="1440" height="900"
         loading="eager"
         fetchpriority="high"
       >
+        </picture>
     </div>
     <div class="hero-slide">
-      <img
-        src="images/hero-2.JPG"
+      <picture>
+          <source srcset="images/opt/hero-2.webp" type="image/webp">
+          <img
+        src="images/opt/hero-2.jpg"
         alt="Chicken Mysore Pulav at Zingara"
         width="1440" height="900"
         loading="lazy" decoding="async"
       >
+        </picture>
     </div>
     <div class="hero-slide">
-      <img
-        src="images/hero-3.JPG"
+      <picture>
+          <source srcset="images/opt/hero-3.webp" type="image/webp">
+          <img
+        src="images/opt/hero-3.jpg"
         alt="Seekh kebab platter at Zingara Restaurant"
         width="1440" height="900"
         loading="lazy" decoding="async"
       >
+        </picture>
     </div>
     <div class="hero-slide">
-      <img
-        src="images/hero-4.JPG"
+      <picture>
+          <source srcset="images/opt/hero-4.webp" type="image/webp">
+          <img
+        src="images/opt/hero-4.jpg"
         alt="Zingara Restaurant interior Horamavu"
         width="1440" height="900"
         loading="lazy" decoding="async"
       >
+        </picture>
     </div>
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
@@ -165,12 +180,15 @@
   <div class="star-product-inner">
     <div class="star-product-img reveal">
       <span class="most-ordered-tag">🔥 Most Ordered</span>
-      <img
-        src="images/zingara-biryani.jpg"
+      <picture>
+          <source srcset="images/opt/zingara-biryani-lg.webp" type="image/webp">
+          <img
+        src="images/opt/zingara-biryani-lg.jpg"
         alt="Zingara Biryani — our signature nati-style chicken biryani"
         width="600" height="450"
         loading="lazy" decoding="async"
       >
+        </picture>
     </div>
     <div class="star-product-text reveal reveal-delay-1">
       <div class="section-badge">Star Dish</div>
@@ -201,7 +219,10 @@
     <!-- Card 1 -->
     <article class="biryani-card reveal">
       <div class="biryani-card-img">
-        <img src="images/chicken-mysore-pulav.jpg" alt="Chicken Mysore Pulav" width="400" height="300" loading="lazy" decoding="async">
+        <picture>
+          <source srcset="images/opt/chicken-mysore-pulav.webp" type="image/webp">
+          <img src="images/opt/chicken-mysore-pulav.jpg" alt="Chicken Mysore Pulav" width="400" height="300" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="biryani-card-body">
         <div class="biryani-card-name">Chicken Mysore Pulav</div>
@@ -215,7 +236,10 @@
     <!-- Card 2 -->
     <article class="biryani-card reveal reveal-delay-1">
       <div class="biryani-card-img">
-        <img src="images/mutton-mysore-pulav.jpg" alt="Mutton Mysore Pulav" width="400" height="300" loading="lazy" decoding="async">
+        <picture>
+          <source srcset="images/opt/mutton-mysore-pulav.webp" type="image/webp">
+          <img src="images/opt/mutton-mysore-pulav.jpg" alt="Mutton Mysore Pulav" width="400" height="300" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="biryani-card-body">
         <div class="biryani-card-name">Mutton Mysore Pulav</div>
@@ -229,7 +253,10 @@
     <!-- Card 3 -->
     <article class="biryani-card reveal reveal-delay-2">
       <div class="biryani-card-img">
-        <img src="images/zingara-biryani.jpg" alt="Zingara Biryani" width="400" height="300" loading="lazy" decoding="async">
+        <picture>
+          <source srcset="images/opt/zingara-biryani-lg.webp" type="image/webp">
+          <img src="images/opt/zingara-biryani-lg.jpg" alt="Zingara Biryani" width="400" height="300" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="biryani-card-body">
         <div class="biryani-card-name">Zingara Biryani</div>
@@ -243,7 +270,10 @@
     <!-- Card 4 -->
     <article class="biryani-card reveal reveal-delay-3">
       <div class="biryani-card-img">
-        <img src="images/veg-biryani.jpg" alt="Veg Biryani" width="400" height="300" loading="lazy" decoding="async">
+        <picture>
+          <source srcset="images/opt/veg-biryani.webp" type="image/webp">
+          <img src="images/opt/veg-biryani.jpg" alt="Veg Biryani" width="400" height="300" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="biryani-card-body">
         <div class="biryani-card-name">Veg Biryani</div>
@@ -301,19 +331,28 @@
     <div class="what-grid">
       <div class="what-card reveal">
         <div class="what-card-img">
-          <img src="images/zingara-biryani.jpg" alt="Biryani portion" width="400" height="300" loading="lazy" decoding="async">
+          <picture>
+          <source srcset="images/opt/zingara-biryani-lg.webp" type="image/webp">
+          <img src="images/opt/zingara-biryani-lg.jpg" alt="Biryani portion" width="400" height="300" loading="lazy" decoding="async">
+        </picture>
         </div>
         <div class="what-card-label">🍛 Biryani</div>
       </div>
       <div class="what-card reveal reveal-delay-1">
         <div class="what-card-img">
-          <img src="images/curd-rice.jpg" alt="Cooling raita" width="400" height="300" loading="lazy" decoding="async">
+          <picture>
+          <source srcset="images/opt/curd-rice.webp" type="image/webp">
+          <img src="images/opt/curd-rice.jpg" alt="Cooling raita" width="400" height="300" loading="lazy" decoding="async">
+        </picture>
         </div>
         <div class="what-card-label">🥛 Raita</div>
       </div>
       <div class="what-card reveal reveal-delay-2">
         <div class="what-card-img">
-          <img src="images/butter-chicken.jpg" alt="Accompanying gravy" width="400" height="300" loading="lazy" decoding="async">
+          <picture>
+          <source srcset="images/opt/butter-chicken.webp" type="image/webp">
+          <img src="images/opt/butter-chicken.jpg" alt="Accompanying gravy" width="400" height="300" loading="lazy" decoding="async">
+        </picture>
         </div>
         <div class="what-card-label">🥘 Gravy (in combos)</div>
       </div>
