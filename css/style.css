@@ -167,6 +167,7 @@ body::after {
 .nav-links a:hover { color:var(--text-dark); }
 .nav-links a:hover::after { width:100%; }
 
+.nav-ctas { display:flex; align-items:center; gap:10px; }
 .nav-cta {
   font-family:'Oswald',sans-serif; font-weight:700;
   font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase;
@@ -175,6 +176,16 @@ body::after {
   transition:background 0.2s;
 }
 .nav-cta:hover { background:var(--red-hover); }
+.nav-cta.nav-cta-outline {
+  background:transparent;
+  color:var(--red);
+  border:2px solid var(--red);
+  padding:8px 16px;
+}
+.nav-cta.nav-cta-outline:hover {
+  background:var(--red);
+  color:var(--cream);
+}
 
 .hamburger {
   display:none; flex-direction:column; gap:5px; padding:8px;
@@ -1061,7 +1072,7 @@ footer {
   .trust-bar-inner { gap:24px; }
   .trust-divider { display:none; }
   .nav-links { display:none; }
-  .nav-cta { display:none; }
+  .nav-ctas { display:none; }
   .hamburger { display:flex; }
   .floating-btns { bottom:80px; }
   .sticky-call { display:block; }

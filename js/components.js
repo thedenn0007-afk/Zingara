@@ -18,7 +18,11 @@
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <a class="nav-cta" href="tel:+919187103005">📞 Call Now</a>
+      <div class="nav-ctas" aria-label="Quick order links">
+        <a class="nav-cta" href="tel:+919187103005" aria-label="Call Zingara">📞 Call Now</a>
+        <a class="nav-cta nav-cta-outline" href="https://www.swiggy.com/direct/brand/230006?source=swiggy-direct&subSource=google" target="_blank" rel="noopener" aria-label="Order Zingara on Swiggy">Swiggy</a>
+        <a class="nav-cta nav-cta-outline" href="https://link.zomato.com/xqzv/rshare?id=133623290305633fe" target="_blank" rel="noopener" aria-label="Order Zingara on Zomato">Zomato</a>
+      </div>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -38,6 +42,8 @@
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
     <a href="tel:+919187103005" class="btn btn-outline-cream" style="margin-top:16px;width:100%;text-align:center;">📞 Call Now</a>
+    <a href="https://www.swiggy.com/direct/brand/230006?source=swiggy-direct&subSource=google" target="_blank" rel="noopener" class="btn btn-outline-cream" style="margin-top:10px;width:100%;text-align:center;">Order on Swiggy</a>
+    <a href="https://link.zomato.com/xqzv/rshare?id=133623290305633fe" target="_blank" rel="noopener" class="btn btn-outline-cream" style="margin-top:10px;width:100%;text-align:center;">Order on Zomato</a>
   `;
 })();
 
