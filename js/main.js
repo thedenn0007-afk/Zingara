@@ -20,18 +20,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const openNav = () => {
     mobileNav?.classList.add('open');
     navOverlay?.classList.add('open');
+    hamburger?.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
+    navClose?.focus?.();
   };
   const closeNav = () => {
     mobileNav?.classList.remove('open');
     navOverlay?.classList.remove('open');
+    hamburger?.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    hamburger?.focus?.();
   };
 
   hamburger?.addEventListener('click', openNav);
   navClose?.addEventListener('click', closeNav);
   navOverlay?.addEventListener('click', closeNav);
   document.querySelectorAll('.mobile-nav a').forEach(a => a.addEventListener('click', closeNav));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileNav?.classList.contains('open')) closeNav();
+  });
 
   /* ── HERO CAROUSEL ── */
   const slides = document.querySelectorAll('.hero-slide');
@@ -126,10 +133,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ── ACTIVE NAV LINK HIGHLIGHTING (SPA-style per page) ── */
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const normalizePath = (path) => {
+    if (!path) return 'index';
+    const cleaned = path.split('?')[0].split('#')[0];
+    const last = cleaned.split('/').filter(Boolean).pop() || 'index';
+    return last.replace(/\.html$/i, '') || 'index';
+  };
+
+  const currentSlug = normalizePath(window.location.pathname);
   document.querySelectorAll('.nav-links a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    const href = link.getAttribute('href') || '';
+    const hrefSlug = normalizePath(href);
+    if (hrefSlug === currentSlug) {
       link.style.color = 'var(--cream)';
       link.style.setProperty('--underline', '100%');
     }

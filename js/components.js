@@ -19,7 +19,7 @@
         <a href="contact.html">Contact</a>
       </nav>
       <a class="nav-cta" href="tel:+919187103005">📞 Call Now</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -31,7 +31,7 @@
   const nav = document.getElementById('mobileNav');
   if (!nav) return;
   nav.innerHTML = `
-    <button class="mobile-nav-close" id="navClose">✕</button>
+    <button class="mobile-nav-close" id="navClose" aria-label="Close menu">✕</button>
     <a href="index.html">Home</a>
     <a href="biryani.html">Biryani</a>
     <a href="menu.html">Full Menu</a>

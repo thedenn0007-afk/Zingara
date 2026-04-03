@@ -46,6 +46,13 @@
       ]
     }
   ],
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/biryani.html", "destination": "/biryani", "permanent": true },
+    { "source": "/menu.html", "destination": "/menu", "permanent": true },
+    { "source": "/about.html", "destination": "/about", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/biryani", "destination": "/biryani.html" },
     { "source": "/menu", "destination": "/menu.html" },
