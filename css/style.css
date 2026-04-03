@@ -190,6 +190,9 @@ body::after {
 .hamburger {
   display:none; flex-direction:column; gap:5px; padding:8px;
 }
+
+/* Home hero: keep extra CTA mobile-only */
+.hero-cta-order { display:none; }
 .hamburger span {
   display:block; width:24px; height:2px;
   background:var(--text-dark); border-radius:2px;
@@ -1080,11 +1083,13 @@ footer {
   .nav-ctas .nav-cta.nav-cta-outline { padding:6px 10px; }
   .hamburger { display:flex; }
   .floating-btns { bottom:80px; }
-  .sticky-call { display:block; }
+  .sticky-call { display:none; }
   .mobile-nav { display:flex; }
   .star-ctas { flex-direction:column; }
   .hours-grid { grid-template-columns:1fr; }
   .menu-tabs { flex-wrap:wrap; }
+  .hero-cta-call, .hero-cta-swiggy, .hero-cta-zomato { display:none; }
+  .hero-cta-order, .hero-cta-visit { display:inline-flex; }
 }
 
 /* ============================================================
