@@ -1165,15 +1165,9 @@ footer {
   background:var(--warm-surf);
 }
 /* Branded placeholder for cards with no image — looks intentional, not broken */
+/* Empty image slot — hide it so no blank rectangle appears */
 .menu-card-img:empty {
-  background: linear-gradient(135deg, var(--warm-surf) 0%, var(--cream-dim) 100%);
-  display:flex; align-items:center; justify-content:center;
-}
-.menu-card-img:empty::after {
-  content:''; display:block;
-  width:60px; height:60px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none'%3E%3Ccircle cx='32' cy='32' r='30' stroke='%23CC1A1A' stroke-width='1.5' stroke-dasharray='4 3' opacity='0.25'/%3E%3Cpath d='M22 26c0-2.2 1.8-4 4-4s4 1.8 4 4v2h8v-2c0-2.2 1.8-4 4-4' stroke='%23CC1A1A' stroke-width='1.5' stroke-linecap='round' opacity='0.4'/%3E%3Cellipse cx='32' cy='38' rx='10' ry='6' stroke='%23CC1A1A' stroke-width='1.5' opacity='0.35'/%3E%3C/svg%3E") center/contain no-repeat;
-  opacity:0.6;
+  display:none;
 }
 .menu-card-img img {
   width:100%; height:100%; object-fit:cover;
