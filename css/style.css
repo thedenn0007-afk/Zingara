@@ -167,7 +167,7 @@ body::after {
 .nav-links a:hover { color:var(--text-dark); }
 .nav-links a:hover::after { width:100%; }
 
-.nav-ctas { display:flex; align-items:center; gap:10px; }
+.nav-ctas { display:flex; align-items:center; gap:10px; flex-shrink:0; }
 .nav-cta {
   font-family:'Oswald',sans-serif; font-weight:700;
   font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase;
@@ -1072,7 +1072,12 @@ footer {
   .trust-bar-inner { gap:24px; }
   .trust-divider { display:none; }
   .nav-links { display:none; }
-  .nav-ctas { display:none; }
+  .nav-ctas { display:flex; gap:8px; }
+  .nav-logo { font-size:1.6rem; }
+  .nav-logo-img { height:30px; }
+  .nav-ctas .nav-cta-text { display:none; }
+  .nav-ctas .nav-cta { padding:8px 10px; font-size:0.7rem; letter-spacing:0.08em; min-width:38px; justify-content:center; }
+  .nav-ctas .nav-cta.nav-cta-outline { padding:6px 10px; }
   .hamburger { display:flex; }
   .floating-btns { bottom:80px; }
   .sticky-call { display:block; }
