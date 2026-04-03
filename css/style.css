@@ -162,6 +162,8 @@ body::after {
   width:0; height:2px; background:var(--red);
   transition:width 0.25s ease;
 }
+.nav-links a.active { color:var(--text-dark); }
+.nav-links a.active::after { width:100%; }
 .nav-links a:hover { color:var(--text-dark); }
 .nav-links a:hover::after { width:100%; }
 
@@ -200,6 +202,8 @@ body::after {
   color:var(--cream); letter-spacing:0.04em;
   padding:8px 0; border-bottom:1px solid rgba(242,234,194,0.15);
 }
+.mobile-nav a.active { color:#fff; }
+.mobile-nav a.active::after { content:''; display:block; width:48px; height:2px; background:var(--cream); margin-top:6px; }
 .mobile-nav a:last-child { border:none; }
 .mobile-nav-close {
   position:absolute; top:20px; right:20px;

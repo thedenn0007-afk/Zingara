@@ -145,8 +145,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const href = link.getAttribute('href') || '';
     const hrefSlug = normalizePath(href);
     if (hrefSlug === currentSlug) {
-      link.style.color = 'var(--cream)';
-      link.style.setProperty('--underline', '100%');
+      link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
+    }
+  });
+
+  document.querySelectorAll('.mobile-nav a').forEach(link => {
+    const href = link.getAttribute('href') || '';
+    const hrefSlug = normalizePath(href);
+    if (hrefSlug === currentSlug) {
+      link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
     }
   });
 
