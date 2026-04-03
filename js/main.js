@@ -4,12 +4,20 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ── NAVBAR SCROLL SHRINK ── */
+  /* ── NAVBAR SCROLL SHRINK + SCROLL-TO-TOP ── */
   const navbar = document.getElementById('navbar');
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
   const onScroll = () => {
     navbar?.classList.toggle('scrolled', window.scrollY > 60);
+    if (scrollTopBtn) {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
+
+  scrollTopBtn?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
   /* ── MOBILE NAV ── */
   const hamburger = document.getElementById('hamburger');

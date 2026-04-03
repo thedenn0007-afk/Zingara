@@ -1329,3 +1329,169 @@ footer {
   .menu-cards-grid { grid-template-columns:1fr; }
 }
     
+
+/* ============================================================
+   PAGE FADE-IN TRANSITION
+   ============================================================ */
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+body {
+  animation: pageFadeIn 0.35s ease forwards;
+}
+
+/* ============================================================
+   SCROLL-TO-TOP BUTTON
+   ============================================================ */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 44px;
+  height: 44px;
+  background: var(--red);
+  color: var(--cream);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background 0.2s ease;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 16px rgba(204,26,26,0.35);
+}
+.scroll-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.scroll-top-btn:hover {
+  background: var(--red-hover);
+}
+
+/* ============================================================
+   BIRYANI PAGE HERO (CSS CLASSES)
+   ============================================================ */
+.biryani-page-hero {
+  background: var(--black);
+  padding: 140px 5vw 60px;
+  position: relative;
+  overflow: hidden;
+}
+.biryani-page-hero-img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.biryani-page-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}
+.biryani-page-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.biryani-page-hero-ctas {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+/* ============================================================
+   ABOUT PAGE STATS (CSS CLASSES)
+   ============================================================ */
+.about-stats-section {
+  background: var(--off-white);
+  padding: 80px 5vw;
+}
+.about-stats-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about-stat-card {
+  background: #fff;
+  border-top: 3px solid var(--red);
+  padding: 32px 24px;
+  border-radius: 3px;
+  text-align: center;
+}
+.about-stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  color: var(--red);
+  line-height: 1;
+}
+.about-stat-label {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+@media (max-width: 600px) {
+  .about-stats-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   FOOTER SOCIAL LINK
+   ============================================================ */
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--cream-dim);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: color 0.2s ease;
+}
+.footer-social-link:hover {
+  color: var(--cream);
+}
+.footer-social-link svg {
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   PAGE HERO WATERMARK TEXT (shared utility)
+   ============================================================ */
+.page-hero-watermark {
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(8rem, 20vw, 18rem);
+  color: rgba(242,234,194,0.04);
+  letter-spacing: 0.05em;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ============================================================
+   BIRYANI HERO IMAGE OPACITY
+   ============================================================ */
+.biryani-page-hero-img img {
+  opacity: 0.25;
+}
