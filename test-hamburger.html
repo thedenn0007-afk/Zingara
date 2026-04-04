@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger Menu Test</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .debug-info {
+      position: fixed;
+      top: 70px;
+      left: 10px;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 12px;
+      z-index: 9999;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="debug-info">
+    <div>Viewport: <span id="viewport"></span></div>
+    <div>Hamburger Display: <span id="hamburger-display"></span></div>
+    <div>Nav Links Display: <span id="navlinks-display"></span></div>
+    <div>Media Query: <span id="media-query"></span></div>
+  </div>
+
+  <nav id="navbar"></nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="mobile-nav" id="mobileNav"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script>
+    function updateDebugInfo() {
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      
+      document.getElementById('viewport').textContent = window.innerWidth + 'px';
+      document.getElementById('hamburger-display').textContent = window.getComputedStyle(hamburger).display;
+      document.getElementById('navlinks-display').textContent = window.getComputedStyle(navLinks).display;
+      
+      if (window.innerWidth <= 640) {
+        document.getElementById('media-query').textContent = 'Mobile (≤640px)';
+      } else if (window.innerWidth <= 900) {
+        document.getElementById('media-query').textContent = 'Tablet (≤900px)';
+      } else {
+        document.getElementById('media-query').textContent = 'Desktop (>900px)';
+      }
+    }
+
+    window.addEventListener('load', updateDebugInfo);
+    window.addEventListener('resize', updateDebugInfo);
+    
+    // Update every second
+    setInterval(updateDebugInfo, 1000);
+  </script>
+</body>
+</html>

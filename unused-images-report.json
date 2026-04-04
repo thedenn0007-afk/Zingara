@@ -1,0 +1,251 @@
+{
+  "root": "C:\\Users\\user\\OneDrive\\Desktop\\Tech\\Live Projects\\zingara",
+  "scannedAt": "2026-04-03T11:10:36.878Z",
+  "totals": {
+    "images": 84,
+    "used": 24,
+    "unused": 60
+  },
+  "unused": [
+    {
+      "rel": "images/opt/ajwani-fish-tikka.jpg",
+      "size": 94136
+    },
+    {
+      "rel": "images/opt/ajwani-fish-tikka.webp",
+      "size": 67172
+    },
+    {
+      "rel": "images/opt/banjara-prawns.jpg",
+      "size": 91536
+    },
+    {
+      "rel": "images/opt/banjara-prawns.webp",
+      "size": 63946
+    },
+    {
+      "rel": "images/opt/beetroot-kebab.jpg",
+      "size": 91498
+    },
+    {
+      "rel": "images/opt/beetroot-kebab.webp",
+      "size": 64868
+    },
+    {
+      "rel": "images/opt/butter-naan.jpg",
+      "size": 78325
+    },
+    {
+      "rel": "images/opt/butter-naan.webp",
+      "size": 55564
+    },
+    {
+      "rel": "images/opt/butter-roti.jpg",
+      "size": 84607
+    },
+    {
+      "rel": "images/opt/butter-roti.webp",
+      "size": 66120
+    },
+    {
+      "rel": "images/opt/chicken-lollipop.jpg",
+      "size": 86923
+    },
+    {
+      "rel": "images/opt/chicken-lollipop.webp",
+      "size": 59402
+    },
+    {
+      "rel": "images/opt/chicken-masala.jpg",
+      "size": 79394
+    },
+    {
+      "rel": "images/opt/chicken-masala.webp",
+      "size": 51618
+    },
+    {
+      "rel": "images/opt/chicken-tikka.jpg",
+      "size": 90414
+    },
+    {
+      "rel": "images/opt/chicken-tikka.webp",
+      "size": 64326
+    },
+    {
+      "rel": "images/opt/curry-patta-chicken.jpg",
+      "size": 94985
+    },
+    {
+      "rel": "images/opt/curry-patta-chicken.webp",
+      "size": 69918
+    },
+    {
+      "rel": "images/opt/dal-khichdi.jpg",
+      "size": 70274
+    },
+    {
+      "rel": "images/opt/dal-khichdi.webp",
+      "size": 46886
+    },
+    {
+      "rel": "images/opt/garlic-naan.jpg",
+      "size": 93951
+    },
+    {
+      "rel": "images/opt/garlic-naan.webp",
+      "size": 75086
+    },
+    {
+      "rel": "images/opt/gulab-jamun.jpg",
+      "size": 66789
+    },
+    {
+      "rel": "images/opt/gulab-jamun.webp",
+      "size": 44546
+    },
+    {
+      "rel": "images/opt/hara-bhara-kebab.jpg",
+      "size": 94668
+    },
+    {
+      "rel": "images/opt/hara-bhara-kebab.webp",
+      "size": 70618
+    },
+    {
+      "rel": "images/opt/hero-1.webp",
+      "size": 146930
+    },
+    {
+      "rel": "images/opt/hero-2.webp",
+      "size": 162812
+    },
+    {
+      "rel": "images/opt/hero-3.webp",
+      "size": 121806
+    },
+    {
+      "rel": "images/opt/hero-4.webp",
+      "size": 136472
+    },
+    {
+      "rel": "images/opt/kadai-paneer.jpg",
+      "size": 85681
+    },
+    {
+      "rel": "images/opt/kadai-paneer.webp",
+      "size": 59660
+    },
+    {
+      "rel": "images/opt/kandhari-chicken-tikka.jpg",
+      "size": 92705
+    },
+    {
+      "rel": "images/opt/kandhari-chicken-tikka.webp",
+      "size": 66406
+    },
+    {
+      "rel": "images/opt/kulcha.jpg",
+      "size": 90559
+    },
+    {
+      "rel": "images/opt/kulcha.webp",
+      "size": 71942
+    },
+    {
+      "rel": "images/opt/lachha-paratha.jpg",
+      "size": 70719
+    },
+    {
+      "rel": "images/opt/lachha-paratha.webp",
+      "size": 46554
+    },
+    {
+      "rel": "images/opt/lal-mirch-paneer-tikka.jpg",
+      "size": 74177
+    },
+    {
+      "rel": "images/opt/lal-mirch-paneer-tikka.webp",
+      "size": 51204
+    },
+    {
+      "rel": "images/opt/malmali-chicken-tikka.jpg",
+      "size": 69904
+    },
+    {
+      "rel": "images/opt/malmali-chicken-tikka.webp",
+      "size": 45282
+    },
+    {
+      "rel": "images/opt/mutton-seekh-roll.jpg",
+      "size": 60637
+    },
+    {
+      "rel": "images/opt/mutton-seekh-roll.webp",
+      "size": 37766
+    },
+    {
+      "rel": "images/opt/palak-khichdi.jpg",
+      "size": 64812
+    },
+    {
+      "rel": "images/opt/palak-khichdi.webp",
+      "size": 41654
+    },
+    {
+      "rel": "images/opt/peri-peri-fries.jpg",
+      "size": 71305
+    },
+    {
+      "rel": "images/opt/peri-peri-fries.webp",
+      "size": 47962
+    },
+    {
+      "rel": "images/opt/shahi-tukda.jpg",
+      "size": 69938
+    },
+    {
+      "rel": "images/opt/shahi-tukda.webp",
+      "size": 47068
+    },
+    {
+      "rel": "images/opt/spicy-mutton-seekh.jpg",
+      "size": 70724
+    },
+    {
+      "rel": "images/opt/spicy-mutton-seekh.webp",
+      "size": 47622
+    },
+    {
+      "rel": "images/opt/steam-rice.jpg",
+      "size": 57011
+    },
+    {
+      "rel": "images/opt/steam-rice.webp",
+      "size": 32424
+    },
+    {
+      "rel": "images/opt/stuffed-tandoori-mushroom.jpg",
+      "size": 73573
+    },
+    {
+      "rel": "images/opt/stuffed-tandoori-mushroom.webp",
+      "size": 52566
+    },
+    {
+      "rel": "images/opt/tandoori-chicken.jpg",
+      "size": 75077
+    },
+    {
+      "rel": "images/opt/tandoori-chicken.webp",
+      "size": 53456
+    },
+    {
+      "rel": "images/opt/zingara-kebab.jpg",
+      "size": 75017
+    },
+    {
+      "rel": "images/opt/zingara-kebab.webp",
+      "size": 51868
+    }
+  ]
+}
