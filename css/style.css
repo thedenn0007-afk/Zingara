@@ -249,14 +249,14 @@ body::after {
    SCROLL REVEAL ANIMATION
    ============================================================ */
 .reveal {
-  opacity:0; transform:translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity:1; transform:none;
+  transition:none;
 }
-.reveal.visible { opacity:1; transform:translateY(0); }
-.reveal-delay-1 { transition-delay:0.1s; }
-.reveal-delay-2 { transition-delay:0.2s; }
-.reveal-delay-3 { transition-delay:0.3s; }
-.reveal-delay-4 { transition-delay:0.4s; }
+.reveal.visible { opacity:1; transform:none; }
+.reveal-delay-1 { transition-delay:0s; }
+.reveal-delay-2 { transition-delay:0s; }
+.reveal-delay-3 { transition-delay:0s; }
+.reveal-delay-4 { transition-delay:0s; }
 
 /* ============================================================
    HERO SECTION
@@ -1506,25 +1506,4 @@ body {
    ============================================================ */
 .biryani-page-hero-img img {
   opacity: 0.25;
-}
-
-
-/* ============================================================
-   IMAGE DULLNESS FIX
-   Image-wrapper cards must not start at opacity:0.
-   They keep the tr
-
-/* ============================================================
-   IMAGE DULLNESS FIX
-   Image-wrapper cards must not start at opacity:0.
-   They keep the transform slide-up but are always visible.
-   Only text/badge/button elements fade in via opacity.
-   ============================================================ */
-.about-img.reveal,
-.star-product-img.reveal,
-.biryani-card.reveal,
-.biryani-full-card.reveal,
-.what-card.reveal,
-.menu-card.reveal {
-  opacity: 1;
 }
