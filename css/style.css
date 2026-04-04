@@ -192,14 +192,26 @@ body::after {
 
 .hamburger {
   display:none; flex-direction:column; gap:5px; padding:8px;
+  cursor: pointer; z-index: 1002;
+  background: rgba(242,234,194,0.1);
+  border-radius: 4px;
+  border: 1px solid rgba(204,26,26,0.3);
 }
 
 /* Home hero: keep extra CTA mobile-only */
 .hero-cta-order { display:none; }
 .hamburger span {
-  display:block; width:24px; height:2px;
-  background:var(--text-dark); border-radius:2px;
+  display:block; width:24px; height:3px;
+  background:var(--red); border-radius:2px;
   transition:all 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.hamburger:hover {
+  background: rgba(242,234,194,0.2);
+  border-color: var(--red);
+}
+.hamburger:hover span {
+  background: var(--red-hover);
 }
 
 /* Mobile nav drawer */
