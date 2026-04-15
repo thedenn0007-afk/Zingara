@@ -86,13 +86,7 @@
           <p>Jayanti Nagar Main Rd<br>Horamavu, Bengaluru – 560043</p>
           <a href="tel:+919187103005">+91 91871 03005</a>
           <a href="https://maps.app.goo.gl/2zYzayMaxCLqLi6e7" target="_blank" rel="noopener">Google Maps ↗</a>
-          <p style="margin-top:12px;">Mon – Sun<br>11:30 AM – 3:30 PM<br>6:30 PM – 10:30 PM</p>
+          <p style="margin-top:12px;">Tue – Sun<br>11:30 AM – 4:00 PM<br>6:30 PM – 10:30 PM<br><span style="color:#c0392b;">Closed Mondays</span></p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span class="footer-copy">© 2026 Zingara Restaurant. All rights reserved.</span>
-        <span class="footer-gst">Prices exclusive of GST. No service charge. Subject to availability.</span>
-      </div>
-    </div>
-  `;
-})();
+      <di
